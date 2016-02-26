@@ -17,6 +17,7 @@ gem 'html2erb'
 gem 'devise-bootstrap-views'
 gem 'simple_form'
 
+
 group :development, :test do
   gem 'byebug'
   gem 'pry'
