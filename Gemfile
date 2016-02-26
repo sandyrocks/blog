@@ -13,7 +13,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'devise'
 gem 'haml-rails'
 gem 'bootstrap-sass'
-gem 'html2erb'
+gem 'erb2haml'
 gem 'devise-bootstrap-views'
 gem 'simple_form'
 

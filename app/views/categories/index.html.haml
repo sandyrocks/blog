@@ -1,0 +1,16 @@
+.row
+  .col-md-offset-2.col-md-6
+    =link_to "New Category", new_category_path, class: 'btn btn-primary'
+    %h2 List All Category
+    %table.table
+      %thead
+        %tr
+          %th #
+          %th Name
+          %th Edit
+      %tbody
+        - @categories.each do |category|
+          %tr
+            %td=category.id
+            %td=category.name
+            %th=link_to "Edit", edit_category_path(category), class: 'btn btn-success'

@@ -1,3 +1,13 @@
 .row
   .col-md-8 
+    - @articles.each do |article|
+      .well.well-lg
+        = article.description
+        = link_to "more..", article_path(article), class: 'btn btn-primary'
+        %p= time_ago_in_words(article.created_at) 
   .col-md-4
+    .list-group
+      .list-group-item Ruby
+      .list-group-item Rails
+      .list-group-item Database
+      .list-group-item Angular

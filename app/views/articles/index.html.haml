@@ -1,0 +1,18 @@
+= link_to "New Article", new_article_path, class: 'btn btn-primary'
+%h1 Articles
+%table.table
+  %thead
+    %tr
+      %th #
+      %th title
+      %th Description
+      %th Action
+  %tbody
+    - @articles.each do |article|
+      %tr
+        %th= link_to article.id, article_path(article)
+        %th= article.title
+        %th= article.description
+        %th= link_to "Edit", edit_article_path(article), class: "btn btn-success"
+
+
